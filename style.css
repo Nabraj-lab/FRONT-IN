@@ -16,7 +16,9 @@ body {
   background-color: #333;
   padding: 1rem 2rem;
 }
+@media (max-width:550px){
 
+}
 .logo {
   color: #fff;
   font-size: 1.5rem;
@@ -25,8 +27,13 @@ body {
 
 .nav-links {
   list-style: none;
-  display: flex;
+  display: none;
   gap: 1.5rem;
+  flex-direction: column;
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  
 }
 
 .nav-links li a {
@@ -58,6 +65,16 @@ transform-origin: right;
 .nav-links li a:hover::after {
 transform: scaleX(1);
 transform-origin: left;
+}
+.hanburger span{
+  height: 3px;
+  width: 25px;
+ background-color: aliceblue;
+}
+.hamburger{
+ flex-direction: column;
+ gap: 3px;
+ display: none;
 }
 .home{
   display: flex;
@@ -195,6 +212,6 @@ h4{
 .intro button:hover {
   background-color: #16a085;
 }
-.foot{
+.footer{
   text-align: center;
 }
