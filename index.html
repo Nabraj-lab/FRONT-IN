@@ -7,10 +7,10 @@
   <link rel="stylesheet" href="style.css">
  </head>
 <body>
-  <div id="project">
+  <div id="project" class="cursor">
   <nav class="navbar">
     <div class="logo">Frontend</div>
-    <ul class="nav-links">
+    <ul class="nav-links" id="navLinks">
       <li><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
       <li><a href="#">Project</a></li>
@@ -35,34 +35,10 @@
      <img class="img" src="./aa.jpg" alt="img" height="300px" width="250 px" >
     </div>
   </div>
+   <h1> Services</h1>
+   <div class="slayout" id="service-container"></div>
   <h1 >My Project</h1>
-  <div class="layout">
-   <div class="card">
-    <img src="./q.jpg" alt="img" height="200px" width="200px" >
-    <h3> Animited Navbar</h3>
-    <p>
-      A responsive navigation bar with smooth animations and toggle functionality.
-    </p>
-
-   </div >
-    <div class="card">
-    <img src="./z.jpg" alt="img2" height="200px" width="200px">
-    <h3>
-      Landing Page
-    </h3>
-    <p>
-      A clean and simple landing page using HTML,CSS,and Basic JS.
-    </p>
-   </div> 
-   <div class="card">
-    <img src="./q.jpg" alt="img" height="200px" width="200px" >
-    <h3> Animited Navbar</h3>
-    <p>
-      A responsive navigation bar with smooth animations and toggle functionality.
-    </p>
-   </div >
-   
-  </div>
+   <div id="project-container" class="project-layout"></div>
   <br>
 <h2>Contact us</h2>
 <br>
@@ -79,6 +55,8 @@
 
     <button type="submit">Send Message</button>
 </form>
+<h5>What People Say</h5>
+
 </div  >
     <footer class="footer">
         <p>&copy;2025 Mr.N.All rights reserved.</p>
@@ -86,8 +64,9 @@
         <a href="#">GitHub</a>
         <a href="#">LinkedIn</a>
     </footer>
-  </form>
 </div>
-</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
